@@ -8,8 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class BFTabViewController;
+
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (nonatomic) BFTabViewController *tabController;
 
 @end

@@ -13,7 +13,30 @@
 		ECF5CEB71725B16700BB2CC2 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = ECF5CEB51725B16700BB2CC2 /* Credits.rtf */; };
 		ECF5CEBA1725B16700BB2CC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF5CEB91725B16700BB2CC2 /* AppDelegate.m */; };
 		ECF5CEBD1725B16700BB2CC2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECF5CEBB1725B16700BB2CC2 /* MainMenu.xib */; };
+		ECF5CEC81725B1EE00BB2CC2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF5CEA61725B16700BB2CC2 /* Cocoa.framework */; };
+		ECF5CECE1725B1EF00BB2CC2 /* BFTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF5CECD1725B1EF00BB2CC2 /* BFTabViewController.m */; };
+		ECF5CED41725B24B00BB2CC2 /* BFTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = ECF5CED21725B24B00BB2CC2 /* BFTabBar.h */; };
+		ECF5CED51725B24B00BB2CC2 /* BFTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF5CED31725B24B00BB2CC2 /* BFTabBar.m */; };
+		ECF5CED81725B31F00BB2CC2 /* NSImage+CEEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = ECF5CED61725B31F00BB2CC2 /* NSImage+CEEditor.h */; };
+		ECF5CEDC1725B46800BB2CC2 /* libBFTabViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF5CEC71725B1EE00BB2CC2 /* libBFTabViewController.a */; };
+		ECF5CEDF1725C12B00BB2CC2 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF5CEDE1725C12B00BB2CC2 /* MyViewController.m */; };
+		ECF5CEE21725C18B00BB2CC2 /* EmptyViewLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF5CEE11725C18B00BB2CC2 /* EmptyViewLabel.m */; };
+		ECF5CEE71725C42F00BB2CC2 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = ECF5CEE31725C42F00BB2CC2 /* icon1.png */; };
+		ECF5CEE81725C42F00BB2CC2 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = ECF5CEE41725C42F00BB2CC2 /* icon2.png */; };
+		ECF5CEE91725C42F00BB2CC2 /* icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = ECF5CEE51725C42F00BB2CC2 /* icon3.png */; };
+		ECF5CEEA1725C42F00BB2CC2 /* icon4.png in Resources */ = {isa = PBXBuildFile; fileRef = ECF5CEE61725C42F00BB2CC2 /* icon4.png */; };
+		ECF5CEEB1725C5A100BB2CC2 /* NSImage+CEEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF5CED71725B31F00BB2CC2 /* NSImage+CEEditor.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECF5CEDA1725B46400BB2CC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECF5CE9B1725B16700BB2CC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF5CEC61725B1EE00BB2CC2;
+			remoteInfo = BFTabViewController;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		ECF5CEA31725B16700BB2CC2 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +52,22 @@
 		ECF5CEB81725B16700BB2CC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECF5CEB91725B16700BB2CC2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		ECF5CEBC1725B16700BB2CC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		ECF5CEC71725B1EE00BB2CC2 /* libBFTabViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBFTabViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF5CECB1725B1EE00BB2CC2 /* BFTabViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BFTabViewController-Prefix.pch"; sourceTree = "<group>"; };
+		ECF5CECC1725B1EE00BB2CC2 /* BFTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFTabViewController.h; sourceTree = "<group>"; };
+		ECF5CECD1725B1EF00BB2CC2 /* BFTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFTabViewController.m; sourceTree = "<group>"; };
+		ECF5CED21725B24B00BB2CC2 /* BFTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFTabBar.h; sourceTree = "<group>"; };
+		ECF5CED31725B24B00BB2CC2 /* BFTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFTabBar.m; sourceTree = "<group>"; };
+		ECF5CED61725B31F00BB2CC2 /* NSImage+CEEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+CEEditor.h"; sourceTree = "<group>"; };
+		ECF5CED71725B31F00BB2CC2 /* NSImage+CEEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+CEEditor.m"; sourceTree = "<group>"; };
+		ECF5CEDD1725C12B00BB2CC2 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		ECF5CEDE1725C12B00BB2CC2 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		ECF5CEE01725C18B00BB2CC2 /* EmptyViewLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyViewLabel.h; sourceTree = "<group>"; };
+		ECF5CEE11725C18B00BB2CC2 /* EmptyViewLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyViewLabel.m; sourceTree = "<group>"; };
+		ECF5CEE31725C42F00BB2CC2 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
+		ECF5CEE41725C42F00BB2CC2 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2.png; sourceTree = "<group>"; };
+		ECF5CEE51725C42F00BB2CC2 /* icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon3.png; sourceTree = "<group>"; };
+		ECF5CEE61725C42F00BB2CC2 /* icon4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +75,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECF5CEDC1725B46800BB2CC2 /* libBFTabViewController.a in Frameworks */,
 				ECF5CEA71725B16700BB2CC2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF5CEC41725B1EE00BB2CC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF5CEC81725B1EE00BB2CC2 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +94,7 @@
 		ECF5CE9A1725B16700BB2CC2 = {
 			isa = PBXGroup;
 			children = (
+				ECF5CEC91725B1EE00BB2CC2 /* BFTabViewController */,
 				ECF5CEAC1725B16700BB2CC2 /* Demo */,
 				ECF5CEA51725B16700BB2CC2 /* Frameworks */,
 				ECF5CEA41725B16700BB2CC2 /* Products */,
@@ -56,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				ECF5CEA31725B16700BB2CC2 /* Demo.app */,
+				ECF5CEC71725B1EE00BB2CC2 /* libBFTabViewController.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +134,10 @@
 			children = (
 				ECF5CEB81725B16700BB2CC2 /* AppDelegate.h */,
 				ECF5CEB91725B16700BB2CC2 /* AppDelegate.m */,
+				ECF5CEDD1725C12B00BB2CC2 /* MyViewController.h */,
+				ECF5CEDE1725C12B00BB2CC2 /* MyViewController.m */,
+				ECF5CEE01725C18B00BB2CC2 /* EmptyViewLabel.h */,
+				ECF5CEE11725C18B00BB2CC2 /* EmptyViewLabel.m */,
 				ECF5CEBB1725B16700BB2CC2 /* MainMenu.xib */,
 				ECF5CEAD1725B16700BB2CC2 /* Supporting Files */,
 			);
@@ -93,6 +147,10 @@
 		ECF5CEAD1725B16700BB2CC2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ECF5CEE31725C42F00BB2CC2 /* icon1.png */,
+				ECF5CEE41725C42F00BB2CC2 /* icon2.png */,
+				ECF5CEE51725C42F00BB2CC2 /* icon3.png */,
+				ECF5CEE61725C42F00BB2CC2 /* icon4.png */,
 				ECF5CEAE1725B16700BB2CC2 /* Demo-Info.plist */,
 				ECF5CEAF1725B16700BB2CC2 /* InfoPlist.strings */,
 				ECF5CEB21725B16700BB2CC2 /* main.m */,
@@ -102,7 +160,41 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		ECF5CEC91725B1EE00BB2CC2 /* BFTabViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ECF5CECC1725B1EE00BB2CC2 /* BFTabViewController.h */,
+				ECF5CECD1725B1EF00BB2CC2 /* BFTabViewController.m */,
+				ECF5CED21725B24B00BB2CC2 /* BFTabBar.h */,
+				ECF5CED31725B24B00BB2CC2 /* BFTabBar.m */,
+				ECF5CED61725B31F00BB2CC2 /* NSImage+CEEditor.h */,
+				ECF5CED71725B31F00BB2CC2 /* NSImage+CEEditor.m */,
+				ECF5CECA1725B1EE00BB2CC2 /* Supporting Files */,
+			);
+			path = BFTabViewController;
+			sourceTree = "<group>";
+		};
+		ECF5CECA1725B1EE00BB2CC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECF5CECB1725B1EE00BB2CC2 /* BFTabViewController-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		ECF5CEC51725B1EE00BB2CC2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF5CED41725B24B00BB2CC2 /* BFTabBar.h in Headers */,
+				ECF5CED81725B31F00BB2CC2 /* NSImage+CEEditor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		ECF5CEA21725B16700BB2CC2 /* Demo */ = {
@@ -116,11 +208,29 @@
 			buildRules = (
 			);
 			dependencies = (
+				ECF5CEDB1725B46400BB2CC2 /* PBXTargetDependency */,
 			);
 			name = Demo;
 			productName = Demo;
 			productReference = ECF5CEA31725B16700BB2CC2 /* Demo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		ECF5CEC61725B1EE00BB2CC2 /* BFTabViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF5CECF1725B1EF00BB2CC2 /* Build configuration list for PBXNativeTarget "BFTabViewController" */;
+			buildPhases = (
+				ECF5CEC31725B1EE00BB2CC2 /* Sources */,
+				ECF5CEC41725B1EE00BB2CC2 /* Frameworks */,
+				ECF5CEC51725B1EE00BB2CC2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BFTabViewController;
+			productName = BFTabViewController;
+			productReference = ECF5CEC71725B1EE00BB2CC2 /* libBFTabViewController.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -131,7 +241,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Balazs Faludi";
 			};
-			buildConfigurationList = ECF5CE9E1725B16700BB2CC2 /* Build configuration list for PBXProject "Demo" */;
+			buildConfigurationList = ECF5CE9E1725B16700BB2CC2 /* Build configuration list for PBXProject "BFTabViewController" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -144,6 +254,7 @@
 			projectRoot = "";
 			targets = (
 				ECF5CEA21725B16700BB2CC2 /* Demo */,
+				ECF5CEC61725B1EE00BB2CC2 /* BFTabViewController */,
 			);
 		};
 /* End PBXProject section */
@@ -156,6 +267,10 @@
 				ECF5CEB11725B16700BB2CC2 /* InfoPlist.strings in Resources */,
 				ECF5CEB71725B16700BB2CC2 /* Credits.rtf in Resources */,
 				ECF5CEBD1725B16700BB2CC2 /* MainMenu.xib in Resources */,
+				ECF5CEE71725C42F00BB2CC2 /* icon1.png in Resources */,
+				ECF5CEE81725C42F00BB2CC2 /* icon2.png in Resources */,
+				ECF5CEE91725C42F00BB2CC2 /* icon3.png in Resources */,
+				ECF5CEEA1725C42F00BB2CC2 /* icon4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,10 +283,30 @@
 			files = (
 				ECF5CEB31725B16700BB2CC2 /* main.m in Sources */,
 				ECF5CEBA1725B16700BB2CC2 /* AppDelegate.m in Sources */,
+				ECF5CEDF1725C12B00BB2CC2 /* MyViewController.m in Sources */,
+				ECF5CEE21725C18B00BB2CC2 /* EmptyViewLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF5CEC31725B1EE00BB2CC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF5CEEB1725C5A100BB2CC2 /* NSImage+CEEditor.m in Sources */,
+				ECF5CECE1725B1EF00BB2CC2 /* BFTabViewController.m in Sources */,
+				ECF5CED51725B24B00BB2CC2 /* BFTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECF5CEDB1725B46400BB2CC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECF5CEC61725B1EE00BB2CC2 /* BFTabViewController */;
+			targetProxy = ECF5CEDA1725B46400BB2CC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		ECF5CEAF1725B16700BB2CC2 /* InfoPlist.strings */ = {
@@ -230,6 +365,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -256,6 +392,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -284,10 +421,28 @@
 			};
 			name = Release;
 		};
+		ECF5CED01725B1EF00BB2CC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BFTabViewController/BFTabViewController-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ECF5CED11725B1EF00BB2CC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BFTabViewController/BFTabViewController-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ECF5CE9E1725B16700BB2CC2 /* Build configuration list for PBXProject "Demo" */ = {
+		ECF5CE9E1725B16700BB2CC2 /* Build configuration list for PBXProject "BFTabViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ECF5CEBE1725B16700BB2CC2 /* Debug */,
@@ -303,6 +458,16 @@
 				ECF5CEC21725B16700BB2CC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF5CECF1725B1EF00BB2CC2 /* Build configuration list for PBXNativeTarget "BFTabViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF5CED01725B1EF00BB2CC2 /* Debug */,
+				ECF5CED11725B1EF00BB2CC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
