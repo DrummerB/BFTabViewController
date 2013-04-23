@@ -42,7 +42,24 @@
 							 self.view.bounds.size.height - _tabBar.frame.size.height);
 	viewController.view.frame = rect;
 	viewController.view.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;
+	
+	if ([viewController respondsToSelector:@selector(viewWillAppear)]) {
+		[viewController performSelector:@selector(viewWillAppear)];
+	}
 	[self.view addSubview:viewController.view];
+	if ([viewController respondsToSelector:@selector(viewDidAppear)]) {
+		[viewController performSelector:@selector(viewDidAppear)];
+	}
+}
+
+- (void)disposeViewController:(NSViewController *)viewController {
+	if ([viewController respondsToSelector:@selector(viewWillDisappear)]) {
+		[viewController performSelector:@selector(viewWillDisappear)];
+	}
+	[viewController.view removeFromSuperview];
+	if ([viewController respondsToSelector:@selector(viewDidDisappear)]) {
+		[viewController performSelector:@selector(viewDidDisappear)];
+	}
 }
 
 - (void)setViewControllers:(NSArray *)viewControllers {
@@ -80,7 +97,7 @@
 	if (_selectedViewController != selectedViewController) {
 		NSInteger index = [_viewControllers indexOfObject:selectedViewController];
 		if (index != NSNotFound) {
-			[_selectedViewController.view removeFromSuperview];
+			[self disposeViewController:_selectedViewController];
 			_selectedViewController = selectedViewController;
 			_selectedIndex = index;
 			[self presentViewController:_selectedViewController];
