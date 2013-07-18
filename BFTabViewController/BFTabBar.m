@@ -33,7 +33,8 @@
 		_multipleSelection = NO;
 		_iconScaleMode = BFTabBarScaleProportionallyDown;
 		_selectedIndexes = [[NSMutableIndexSet alloc] init];
-		
+		_topLineColor = _bottomLineColor = [NSColor colorWithCalibratedRed:0.333 green:0.333 blue:0.333 alpha:1.000];
+		_inactiveTopLineColor = _inactiveBottomLineColor = [NSColor colorWithCalibratedRed:0.502 green:0.502 blue:0.502 alpha:1.000];
     }
     
     return self;
@@ -219,13 +220,15 @@
 	//// Color Declarations
 	NSColor* gradientColor = [NSColor colorWithCalibratedRed: 0.83 green: 0.83 blue: 0.83 alpha: 1];
 	NSColor* gradientColor2 = [NSColor colorWithCalibratedRed: 0.68 green: 0.68 blue: 0.68 alpha: 1];
-	NSColor* lineColor = [NSColor colorWithCalibratedRed:0.333 green:0.333 blue:0.333 alpha:1.000];
+	NSColor *topLineColor = _topLineColor;
+	NSColor *bottomLineColor = _bottomLineColor;
 	
 	if (![[self window] isMainWindow])
 	{
 		gradientColor = [NSColor colorWithCalibratedRed:0.961 green:0.961 blue:0.961 alpha:1.000];
 		gradientColor2 = [NSColor colorWithCalibratedRed:0.855 green:0.855 blue:0.855 alpha:1.000];
-		lineColor = [NSColor colorWithCalibratedRed:0.502 green:0.502 blue:0.502 alpha:1.000];
+		topLineColor = _inactiveTopLineColor;
+		bottomLineColor = _inactiveBottomLineColor;
 	}
 	
 	//// Gradient Declarations
@@ -338,20 +341,24 @@
 	
 	
 	//// Line Drawing
-	NSBezierPath* line1 = [NSBezierPath bezierPath];
-	[line1 moveToPoint: NSMakePoint(0.0, 0.5)];
-	[line1 lineToPoint: NSMakePoint(self.bounds.size.width, 0.5)];
-	[lineColor setStroke];
-	[line1 setLineWidth: 1];
-	[line1 stroke];
+	if (bottomLineColor) {
+		NSBezierPath* line1 = [NSBezierPath bezierPath];
+		[line1 moveToPoint: NSMakePoint(0.0, 0.5)];
+		[line1 lineToPoint: NSMakePoint(self.bounds.size.width, 0.5)];
+		[bottomLineColor setStroke];
+		[line1 setLineWidth: 1];
+		[line1 stroke];
+	}
 	
 	//// Line Drawing
-	NSBezierPath* line2 = [NSBezierPath bezierPath];
-	[line2 moveToPoint: NSMakePoint(0.0, self.bounds.size.height - 0.5)];
-	[line2 lineToPoint: NSMakePoint(self.bounds.size.width, self.bounds.size.height - 0.5)];
-	[lineColor setStroke];
-	[line2 setLineWidth: 1];
-	[line2 stroke];
+	if (topLineColor) {
+		NSBezierPath* line2 = [NSBezierPath bezierPath];
+		[line2 moveToPoint: NSMakePoint(0.0, self.bounds.size.height - 0.5)];
+		[line2 lineToPoint: NSMakePoint(self.bounds.size.width, self.bounds.size.height - 0.5)];
+		[topLineColor setStroke];
+		[line2 setLineWidth: 1];
+		[line2 stroke];
+	}
 }
 
 #pragma mark -

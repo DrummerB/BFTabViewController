@@ -33,6 +33,7 @@
 	_tabBar.autoresizingMask = NSViewWidthSizable | NSViewMinYMargin;
 	_tabBar.delegate = self;
 	[view addSubview:_tabBar];
+	[self gatherTabBarItems];
 	
 	self.view = view;
 }
@@ -62,24 +63,28 @@
 	}
 }
 
+- (void)gatherTabBarItems {
+	NSMutableArray *items = [[NSMutableArray alloc] initWithCapacity:_viewControllers.count];
+	for (NSViewController *viewController in _viewControllers) {
+		if ([viewController respondsToSelector:@selector(tabBarItem)]) {
+			BFTabBarItem *item = [viewController performSelector:@selector(tabBarItem)];
+			[items addObject:item];
+		} else {
+			BFTabBarItem *item = [[BFTabBarItem alloc] initWithIcon:nil tooltip:viewController.title];
+			[items addObject:item];
+			NSLog(@"View controller doesn't implement tabBarItem.");
+		}
+	}
+	[_tabBar setItems:items];
+}
+
 - (void)setViewControllers:(NSArray *)viewControllers {
 	if (_viewControllers != viewControllers) {
 		_viewControllers = viewControllers;
 		
 		[_selectedViewController.view removeFromSuperview];
 		
-		NSMutableArray *items = [[NSMutableArray alloc] initWithCapacity:_viewControllers.count];
-		for (NSViewController *viewController in _viewControllers) {
-			if ([viewController respondsToSelector:@selector(tabBarItem)]) {
-				BFTabBarItem *item = [viewController performSelector:@selector(tabBarItem)];
-				[items addObject:item];
-			} else {
-				BFTabBarItem *item = [[BFTabBarItem alloc] initWithIcon:nil tooltip:viewController.title];
-				[items addObject:item];
-				NSLog(@"View controller doesn't implement tabBarItem.");
-			}
-		}
-		[_tabBar setItems:items];
+		[self gatherTabBarItems];
 		
 		self.selectedIndex = --_selectedIndex + 1;
 	}

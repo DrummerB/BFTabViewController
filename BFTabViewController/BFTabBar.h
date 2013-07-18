@@ -32,6 +32,11 @@ typedef NS_ENUM(NSUInteger, BFTabBarScale) {
 @property (nonatomic) BOOL multipleSelection;
 @property (nonatomic, weak) IBOutlet NSObject<BFTabBarDelegate> *delegate;
 
+@property (nonatomic) NSColor *topLineColor;
+@property (nonatomic) NSColor *bottomLineColor;
+@property (nonatomic) NSColor *inactiveTopLineColor;
+@property (nonatomic) NSColor *inactiveBottomLineColor;
+
 - (BFTabBarItem *)selectedItem;
 - (NSInteger)selectedIndex;
 - (NSArray *)selectedItems;
